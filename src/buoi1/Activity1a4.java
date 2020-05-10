@@ -7,10 +7,10 @@ public class Activity1a4 {
         Scanner scanner = new Scanner(System.in);
         System.out.print("A number: ");
         int a = scanner.nextInt();
-         for (int i =1; i <= 10; i++) {
-             //kt gia tri - dieu kien - tang giam bien
-             int product = a * i ;
-             System.out.println(a + "x" + i + "=" + product );
-         }
+        for (int i = 1; i <= 10; i++) {
+            //kt gia tri - dieu kien - tang giam bien
+            int product = a * i;
+            System.out.println(a + "x" + i + "=" + product);
+        }
     }
 }
