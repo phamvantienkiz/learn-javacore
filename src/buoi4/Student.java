@@ -10,21 +10,12 @@ public class Student {
     private String mssv;
     private String genter;*/
 
-    public Student(String name, int age) {
+    public Student(String name, float gpa) {
         this.name = name;
         this.gpa = gpa;
-        //this.age = age;
-
     }
 
     public Student() {
-
-    }
-
-    public Student(String nextLine) {
-    }
-
-    public Student(float nextFloat) {
 
     }
 
@@ -39,6 +30,19 @@ public class Student {
     public float getGpa() { return gpa; }
 
     public void setGpa(int gpa) { this.gpa = gpa; }
+
+    public boolean checkgpa() {
+        if (gpa>=1.5) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public void printprofile() {
+        System.out.print("Name: " + name + "  -  ");
+        System.out.println("GPA: " + gpa);
+    }
 
     /*public int getAge() {
         return age;

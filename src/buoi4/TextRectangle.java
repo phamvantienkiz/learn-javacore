@@ -4,7 +4,21 @@ import java.util.Scanner;
 
 public class TextRectangle {
     public static void main(String[] args) {
-        //khoi tao
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Width: ");
+        int width = scanner.nextInt();
+        System.out.println("Height: ");
+        int height = scanner.nextInt();
+
+        Rectangle rectangle = new Rectangle(width, height);
+
+        System.out.println("Chu vi la: " + rectangle.chuvi());
+        System.out.println("Dien tich la: " + rectangle.dientich());
+        rectangle.printsize();
+        rectangle.checksquare();
+
+        /*//khoi tao
         Scanner scanner = new Scanner(System.in);
         System.out.print("Width: ");
         Rectangle chieurong = new Rectangle();
@@ -32,7 +46,7 @@ public class TextRectangle {
             System.out.println("Day la hinh chu nhat");
         } else {
             System.out.println("Day khong phai la hinh chu nhat");
-        }
+        }*/
 
     }
 }
