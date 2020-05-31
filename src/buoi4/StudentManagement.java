@@ -1,7 +1,6 @@
 package buoi4;
 
 import java.util.Arrays;
-import java.util.Scanner;
 
 public class StudentManagement {
     private int totalStudent;
@@ -61,28 +60,28 @@ public class StudentManagement {
         return demSVTruoc;
     }
 
-    public void svGPAmax() {
+    public Student svGPAmax() { //tra ra thong tin, thay void bang student
         float max = 0;
-        String svGPAmax = " ";
+        Student svGPAmax = null;
         for (int i = 0; i < totalStudent; i++) {
             if (student[i].getGpa() > max) {
                 max = student[i].getGpa() ;
-                svGPAmax = student[i].getName() ;
+                svGPAmax = student[i] ;
             }
         }
-        System.out.println("SV co GPA cao nhat la: " + svGPAmax);
+        return svGPAmax;
     }
 
-    public void svGPAmin() {
+    public Student svGPAmin() {
         float min = 0;
-        String svGPAmin = " ";
+        Student svGPAmin = null;
         for (int i = 0; i < totalStudent; i++) {
             if (student[i].getGpa() > min) {
                 min = student[i].getGpa() ;
-                svGPAmin = student[i].getName() ;
+                svGPAmin = student[i] ;
             }
         }
-        System.out.println("SV co GPA thap nhat la: " + svGPAmin);
+        return svGPAmin;
     }
 
 

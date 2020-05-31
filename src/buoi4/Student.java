@@ -1,7 +1,5 @@
 package buoi4;
 
-import java.util.Scanner;
-
 public class Student {
     private String name;
     private float gpa;

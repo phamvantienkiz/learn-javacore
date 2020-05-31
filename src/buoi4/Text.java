@@ -12,7 +12,7 @@ public class Text {
 
         scanner.nextLine();
         for (int i = 0; i < n; i++) {
-            System.out.print("Sinh vien "+ (i+1) + " Ten: ");
+            System.out.println("Sinh vien "+ (i+1) + " Ten: ");
             String name = scanner.nextLine();
             System.out.print("   -   Diem GPA: ");
             float gpa = scanner.nextFloat();
@@ -25,10 +25,20 @@ public class Text {
 
         System.out.println("Tong so sinh vien do la: "+ studentManagement.demSVDo());
         System.out.println("Tong so sinh vien truoc la: "+ studentManagement.demSVTruoc());
-        System.out.print("Sinh vien co GPA cao nhat la: ");
-        studentManagement.svGPAmax();
-        System.out.print("Sinh vien co GPA thap nhat la: ");
-        studentManagement.svGPAmin();
+
+        Student gpaMax = studentManagement.svGPAmax();
+        System.out.print("Sinh vien co GPA cao nhat la: " + gpaMax.getGpa() + " co ten la " + gpaMax.getName());
+
+        Student gpaMin = studentManagement.svGPAmin();
+        System.out.print("Sinh vien co GPA thap nhat la: " + gpaMin.getGpa() + " co ten la " + gpaMin.getName());
+
+
+
+
+
+
+
+
         /*Student sinhVien1 = new Student();
 
         sinhVien1.name = "Nguyen Van A";
